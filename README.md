@@ -185,7 +185,7 @@ We can readily look at the relationships of Fire and Invasive annual grasses her
 https://user-images.githubusercontent.com/62572330/231844375-50812820-920a-429d-a4da-ea275a8b0eb6.mp4
 
 
-Finally, we can show how to focus on a single species to look at some prospective areas for scouting. Here we will add the occurrence records, by time period, and then add on the Species Distribution Models. 
+Finally, we can show how to focus on a single species to look at some prospective areas for scouting. Here we will add the occurrence records, by time period, and then add on the Species Distribution Models. As you can see occurrence records explode since the millenium, this is largely due to the implmentation of the AIM program around 2010. The SDM has been categorized into 5 classes, the first - which you cannot see, is highly unsuitable habitat. The next four levels go from 1-4, and indicate increasingly suitable habitat. Classes 3 and 4 are very suitable and ideal, respectively. 
 
 
 
