@@ -193,5 +193,10 @@ https://user-images.githubusercontent.com/62572330/231861285-b70d2528-882b-4619-
 
 
 
+Now we can use some relevant layers to look for some areas which like promising scouting locations.
+
+
+https://user-images.githubusercontent.com/62572330/231862471-72b0349f-afe2-44a7-8419-9996d782ce14.mp4
+
 
 
