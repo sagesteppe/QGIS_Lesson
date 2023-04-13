@@ -185,7 +185,12 @@ We can readily look at the relationships of Fire and Invasive annual grasses her
 https://user-images.githubusercontent.com/62572330/231844375-50812820-920a-429d-a4da-ea275a8b0eb6.mp4
 
 
-Finally, we can show how to focus on a single species to look at some prospective areas for scouting. 
+Finally, we can show how to focus on a single species to look at some prospective areas for scouting. Here we will add the occurrence records, by time period, and then add on the Species Distribution Models. 
+
+
+
+https://user-images.githubusercontent.com/62572330/231861285-b70d2528-882b-4619-b075-65b272e70268.mp4
+
 
 
 
