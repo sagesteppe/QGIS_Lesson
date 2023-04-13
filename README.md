@@ -110,9 +110,7 @@ We will utilize our other plugin **Load them all**, load them all looks like a f
 
 Ok now the occurrence data are imported! We are going to turn these into a **Group**, a set of data which we can manage simultaneously. To create a **Group** right click on the top-most record scroll down to the very last record, and right click again while holding shift. With any luck every record will now be selected! Now on this menu select **'Create Group'**, and let's name this group **Occurrence**. 
 
-
-https://user-images.githubusercontent.com/62572330/231843627-46e51410-4609-4417-bc49-59254283174f.mp4
-
+https://user-images.githubusercontent.com/62572330/231843778-76bd0eaa-066b-448b-96c0-b64ed32543d3.mp4
 
 We will style these data now quickly. Because well, they are uninformative, and data which are uninformative are not worth much. We will load some pre-loading styles I came up with using [Colorbrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3), hopefully they look okay. Right click on the top-most record, it is probably *Achnatherum lemmonii*, and select **'Properties'** and then **Style >> Load Style**, now navigate to the **qml_styles** directory, and select the **Occurrences.qml** file. Now **Apply** and **OK** this selection. 
 
