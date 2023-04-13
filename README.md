@@ -10,6 +10,8 @@ QGIS is arguably the most common GIS in the open source ecosystem with a **Graph
 
 ## Installation 
 
+![QGIS](./images/QGIS_logo.resized.png)
+
 Normally, I would not ask you to install GIS software on your computer; but due to being so 'light' QGIS is the exception. QGIS can be downloaded from [here](https://www.qgis.org/en/site/forusers/download.html), for all major operating systems: Windows, Mac, and several flavors of Linux. 
 
 **Windows** users are **unlikely** to need the OSGeo4W installer; although it is a small efficient piece of software which does not take up much room. It might be safer to download than be sorry if you want to keep using this in the not so near future!
@@ -20,7 +22,11 @@ Normally, I would not ask you to install GIS software on your computer; but due 
 
 Great that is about it! It is a quick install! Once downloaded navigate to the program, and if necessary feel free to pin it to your start bar or something so you don't forget about it!
 
+![Plugins](./images/Manage-install_Plugins.resized.png)
+
 Part of why QGIS is so light it that it does not come with many interfaces to the other open-source software which some folks may use. You download these using **Plugins**. We will install two Plugins. Open QGIS, if it is not already, and navigate to the **Plugins** tab on the top bar and **Plugins >> Manage and Install Plugins**. From this pop-up screen use the **Search** bar at top to search for **QuickMapServices**. We will use this Plugin to display base maps. Now let's add one more Plugin, using the **Search** bar search for **Load Them All**. We will use this service to import many files quickly. 
+
+![Search Plugins](./images/Install-QuickMapServics.resized.png)
 
 That's it! We now have an operational GIS on our hands!
 
@@ -32,12 +38,18 @@ The only other data sets we have which are not present on the tablet are some da
 
 Now we are also going to download some data that contains pre-specified aesthetics for our project. Let's be honest, this should style automatically, but I hardly ever use GUI GIS software, so I just don't know how to do that! Normally it sucks to suck, but I am just going to make you all have to map the aesthetics over yourselves!! So ya!
 
-Download the zip file 'qml_styles' from [here](https://github.com/sagesteppe/QGIS_Lesson/blob/main/data/qml_styles.zip), and click the litle 'download' button. Place this in the same directory as above, and remember to unzip it. 
+Download the zip file 'qml_styles' from [here](https://github.com/sagesteppe/QGIS_Lesson/blob/main/data/qml_styles.zip), and click the little 'download' button. Place this in the same directory as above, and remember to unzip it. 
 
+![Download from Github](./images/Download-QML.resized.png)
 
 ## Create a QGIS Project
 
 Many GIS operate on the sense of a **project** a big related set of objects for each thing you are working on. We will create a **Project** for your SoS-Planning. The easy way to do this is to **close** QGIS (if it is open), and reopen it, and click on **'New Project'**, if you already have a project than click **Project >> New**. You have now entered a new Project, now let's save this at the **root** of your Geodata folder. 
+
+
+![Save at root](./images/SaveAs-location.resized.png)
+
+
 
 ```
 .
@@ -80,14 +92,19 @@ If you are unfamiliar with the **root**, it is the base of something! So if we l
 
 ## Import data to QGIS
 
-We are now ready to import data to our QGIS project, it looks a little sad without any content doesn't it? First let's add in a basemap so that we are oriented. We will use the **QuickMapServices** Plugin which we just installed. This Plugin is located on your toolbar, around here ((IMAGE)). 
+We are now ready to import data to our QGIS project, it looks a little sad without any content doesn't it? First let's add in a basemap so that we are oriented. We will use the **QuickMapServices** Plugin which we just installed. This Plugin is generally located on the right end of your toolbar. It looks like a globe with binoculars. 
 
-**OSM >> OSM Standard**. This imports a freely available base map tile service. Cool!
+![Plug in Locations](./images/Plugins.resized.png)
+
+Once you have located it, we will use it to import the standard basemap which it ships with, **OSM >> OSM Standard**. This imports a freely available base map tile service. Cool!
+
+![Import basemap](./images/Import_OSM.resized.png)
 
 Now we will import our two big sets of data, our **Species Distribution Models**, and the **occurrence** data we used to create them. These are most complex imports, so we will do them before we have a chance to mess up the project and need to revert back!
 
-We will utilize our other plugin **Load them all**. So click on that!
-Now make sure that the leftmost option, **Vector**, is toggled. Vector data are what sometimes are called 'shapefiles', shapefiles are a specific type of vector data, but not all vector data are shapefiles!!! If you are unfamiliar with geographic data formats, check out a lecture on the topic [here](). We will now navigate to the to the folder containing your geodata **'Geodata/Species/Occurrences'**, and select the file format **ESRI Shapefile (*.shp)** there should be somewhere from around 30-50 files showing in that location. Now at the very bottom right of this window select 'Load Data'. 
+We will utilize our other plugin **Load them all**, load them all looks like a folder with a green arrow coming down from it, like the folder is being opened. So click on that! Now make sure that the leftmost option, **Vector**, is toggled. Vector data are what sometimes are called 'shapefiles', shapefiles are a specific type of vector data, but not all vector data are shapefiles!!! If you are unfamiliar with geographic data formats, check out a lecture on the topic [here](). We will now navigate to the to the folder containing your geodata **'Geodata/Species/Occurrences'**, and select the file format **ESRI Shapefile (*.shp)** there should be somewhere from around 30-50 files showing in that location. Now at the very bottom right of this window select 'Load Data'. 
+
+
 
 Ok now the occurrence data are imported! We are going to turn these into a **Group**, a set of data which we can manage simultaneously. To create a **Group** right click on the top-most record scroll down to the very last record, and right click again while holding shift. With any luck every record will now be selected! Now on this menu select **'Create Group'**, and let's name this group **Occurrence**. 
 
@@ -102,20 +119,8 @@ But wait... why? Why should each species be the same color! This makes no sense!
 
 Now if that all went to plan, let's **save** our project! Now we can add in the **SDMs**
 
+### Add in Species Distribution Models
 
 
 
-
-
-
-
-## Group Styles
-
-
-1) create a group of all the layers you want to have the same style
-2) Edit the style of one of the layers in the group to your liking
-3) Right-click the correctly styled layer; 'Styles' -> 'Copy Style' -> 'Symbology'
-4) Select the group you created before
-5) Right-click the group; 'Paste Style'
-
-@GISinHelsinki on GIS StackExchange
+### Add in remaining variables
