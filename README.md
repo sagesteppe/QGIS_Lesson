@@ -169,17 +169,24 @@ Note that you only need to drag the 'shp' file into QGIS, it uses the others, bu
 
 Some of the layers are kind of redundant and some will require only cursory glances at. For example, the 'Drought' layers are oftentimes pretty similar, and easy to interpret. Anywhere that is not in negative values is great to collect from! And theoretically the bluer, the area the more seeds. But don't worry too much about trying to maximize this. 
 
+
 https://user-images.githubusercontent.com/62572330/231854875-57b43428-c095-48fc-b584-60d1f485bbc0.mp4
+
 
 Speaking of drought, because the moisture has been pretty good this season, it is a good year to collect from some of the dried Seed Transfer zones, I have added them in. If we toggle this on and off, you will notice there are some small patches of land which are **not** colored, these zones are NO GO's! They are too small and it is **not** desirable to collect seed from them. Depending on where you are working, BLM may not really have any land in them anways! 
 
+
 https://user-images.githubusercontent.com/62572330/231854714-40c55820-8dda-452c-b285-7b2e39296c46.mp4
 
+
 We can readily look at the relationships of Fire and Invasive annual grasses here. Note that historic fires beg fires to re-occurr, this is common, and that these areas often have the highest amount of invasive species! Hmmm....! You'll hear alot about this this year! Essentially these annual invasives have totally altered the fire-cycle and are caught in a positive (for them...) feedback loop!
+
 
 https://user-images.githubusercontent.com/62572330/231844375-50812820-920a-429d-a4da-ea275a8b0eb6.mp4
 
 
 Finally, we can show how to focus on a single species to look at some prospective areas for scouting. 
+
+
 
 
