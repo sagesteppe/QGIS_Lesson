@@ -102,9 +102,7 @@ Once you have located it, we will use it to import the standard basemap which it
 
 Now we will import our two big sets of data, our **Species Distribution Models**, and the **occurrence** data we used to create them. These are most complex imports, so we will do them before we have a chance to mess up the project and need to revert back!
 
-
 https://user-images.githubusercontent.com/62572330/231841827-b28abb00-aff3-42be-8813-43a2a6c8ddb1.mp4
-
 
 We will utilize our other plugin **Load them all**, load them all looks like a folder with a green arrow coming down from it, like the folder is being opened. So click on that! Now make sure that the leftmost option, **Vector**, is toggled. Vector data are what sometimes are called 'shapefiles', shapefiles are a specific type of vector data, but not all vector data are shapefiles!!! If you are unfamiliar with geographic data formats, check out a lecture on the topic [here](). We will now navigate to the to the folder containing your geodata **'Geodata/Species/Occurrences'**, and select the file format **ESRI Shapefile (*.shp)** there should be somewhere from around 30-50 files showing in that location. Now at the very bottom right of this window select 'Load Data'. 
 
@@ -127,9 +125,51 @@ Now if that all went to plan, let's **save** our project! Now we can add in the 
 
 ### Add in Species Distribution Models
 
+A very similar process is used to the bulk importing of Species Distribution Models as for the raw occurrence data. 
 
+We will need to select the second tab on the **Load them all** plugin pop-up window, the one that says **"Raster"**. We will the redirect the path to the **SDM**
+ directory and switch the filetype to **GeoTIFF .tif, .tiff**. Now you can load the data again. They should also be **grouped** and have their styles added to them in the same way as the occurrence data. 
+ 
+![Plug in Locations](./images/Load-Raster.resized.png)
 
 ### Add in remaining variables
+
+The remaining variables only have at most two layers (for drought), and so they are simple to import. There are a few schools of thought on this but I just go into the folders, like you would when normally navigating a computer and drag and drop the datasets in. The remaining datasets are:
+
+```
+├── Admin
+│   ├── Boundaries
+│   │   ├── Field_Office_Boundaries.shp
+│   └── Surface
+│       ├── BLM_Surface.shp
+│       ├── USFS_Surface.shp
+├── Disturb
+│   ├── Fire
+│   │   ├── Fire.shp
+│   └── Invasive
+│       └── Invasive.tif
+├── Drought
+│   ├── drought-12.tif
+│   ├── drought-6.tif
+├── Roads
+│   ├── roads.shp
+├── SoS-Planning.qgz
+├── Species
+│   ├── Historic_SoS
+│   │   ├── Historic_SoS.shp
+│   ├── Occurrences
+└── STZ
+    ├── STZ.shp
+
+```
+
+Note that you only need to drag the 'shp' file into QGIS, it uses the others, but will figure them out once the '.shp' file is dropped in. All of these layers contain style (qml) files which have identical, or near identical names to them. 
+
+## Simple digital scouting example
+
+Some of the layers are kind of redundant and some will require only cursory glances at. For example, the 'Drought' layers are oftentimes pretty similar, and easy to interpret. Anywhere that is not in negative values is great to collect from! And theoretically the bluer, the area the more seeds. But don't worry too much about trying to maximize this. Because the moisture has been pretty good this season, it is a good year to collect from some of the dried Seed Transfer zones, I have added them in. If we toggle this on and off, you will notice there are some small patches of land which are **not** colored, these zones are NO GO's! They are too small and it is **not** desirable to collect seed from them. Depending on where you are working, BLM may not really have any land in them anways! 
+
+VIDEO OF STZ TOGGLE
 
 We can readily look at the relationships of Fire and Invasive annual grasses here. Note that historic fires beg fires to re-occurr, this is common, and that these areas often have the highest amount of invasive species! Hmmm....!
 
