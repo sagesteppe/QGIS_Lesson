@@ -193,10 +193,13 @@ https://user-images.githubusercontent.com/62572330/231861285-b70d2528-882b-4619-
 
 
 
-Now we can use some relevant layers to look for some areas which like promising scouting locations.
+Now we can use some relevant layers to look for some areas which like promising scouting locations. Most all of these areas look pretty good! Although the lower left most looks pretty close to private, and deserves closer investigation. The furthest right most population looks pretty far off the beaten path, and the road conditions to it should be investigated; if things don't pan out at the populations near the major roads it is worth asking BLM staff about conditions out that way. 
 
 
 https://user-images.githubusercontent.com/62572330/231862471-72b0349f-afe2-44a7-8419-9996d782ce14.mp4
+
+
+
 
 
 
