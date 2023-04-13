@@ -195,11 +195,17 @@ https://user-images.githubusercontent.com/62572330/231861285-b70d2528-882b-4619-
 
 Now we can use some relevant layers to look for some areas which like promising scouting locations. Most all of these areas look pretty good! Although the lower left most looks pretty close to private, and deserves closer investigation. The furthest right most population looks pretty far off the beaten path, and the road conditions to it should be investigated; if things don't pan out at the populations near the major roads it is worth asking BLM staff about conditions out that way. 
 
-
 https://user-images.githubusercontent.com/62572330/231862471-72b0349f-afe2-44a7-8419-9996d782ce14.mp4
 
 
 
+Here I have drawn some simple yellow boxes around a few of these candidate areas. 
 
+![Possible Scout Areas](./images/Prospective_Areas.png)
 
+There are many different ways to get to these. Which one you choose is pretty personal. An old-timer like me will grab the coordinates, mark them in a physical road atlas, and navigate to them using that, using BLM 1:100 topos as required. But, your tablets provide excellent alternatives!!! For example you can drop pins to these in there, or even select the AIM plot records!!! 
+
+![Older school coordinate grab](./images/Grab-Coordinate.resized.png)
+
+Anyways, hopefully you have QGIS set up now, and you can start finding scouting populations one species at a time! Whether you record locations in road atlases, tablets, or whatever else, we encouarge you to put them on a spreadsheet. Then you have a record of what looks promising, and we expect you to record the fate of each of these scouting events to the tablet! After a few scouting hitches, you will then be able to switch exclusively to geo-platform for your collection revisits!!
 
