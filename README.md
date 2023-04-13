@@ -114,6 +114,8 @@ https://user-images.githubusercontent.com/62572330/231843778-76bd0eaa-066b-448b-
 
 We will style these data now quickly. Because well, they are uninformative, and data which are uninformative are not worth much. We will load some pre-loading styles I came up with using [Colorbrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3), hopefully they look okay. Right click on the top-most record, it is probably *Achnatherum lemmonii*, and select **'Properties'** and then **Style >> Load Style**, now navigate to the **qml_styles** directory, and select the **Occurrences.qml** file. Now **Apply** and **OK** this selection. 
 
+https://user-images.githubusercontent.com/62572330/231844207-5b512126-f423-47ec-b8c3-782cdec1daa0.mp4
+
 You might not even be able to see what we did there... Let's turn of all of the records in our **Occurrence** group really quick. Right click on the group, and select **Uncheck and all it's children**, now just check the little cell next to the record you added the stylings to, maybe *Achnatherum lemmonii*, OK see what we did? If not you might need to **Right Click >> Zoom to layer**; now you should be focused on these records. Keep in mind for you field offices there could only be 1 record! 
 
 Now, let's apply this styling to every species in our Occurrence group. Click on the name of the top-most record and **Style >> Copy Style >> Symbology**, and now **right click >> Paste style**. If all goes to plan, each species will have the same symbology!
@@ -128,3 +130,14 @@ Now if that all went to plan, let's **save** our project! Now we can add in the 
 
 
 ### Add in remaining variables
+
+We can readily look at the relationships of Fire and Invasive annual grasses here. Note that historic fires beg fires to re-occurr, this is common, and that these areas often have the highest amount of invasive species! Hmmm....!
+
+https://user-images.githubusercontent.com/62572330/231844375-50812820-920a-429d-a4da-ea275a8b0eb6.mp4
+
+
+
+
+Finally, we can show how to focus on a single species to look at some prospective areas for scouting. 
+
+
