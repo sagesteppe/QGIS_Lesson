@@ -18,7 +18,9 @@ Normally, I would not ask you to install GIS software on your computer; but due 
 
 **Mac** "macOS High Sierra (10.13) or newer is required. QGIS is not yet notarized as required by macOS Catalina (10.15) security rules. On first launch, please control-click on the icon and choose Open from the context menu, after which a confirmation dialog is shown and you need to click the Open button."
 
-There is a common problem on Macintosh that the security ticket from QGIS is not recognized. This should have been fixed a long time ago, but [this post](https://github.com/qgis/QGIS/issues/34018) details how to bypass security to allow usage of QGIS.  
+There is a common problem on Macintosh that the security ticket from QGIS is not recognized. This should have been fixed a long time ago, but [this post](https://github.com/qgis/QGIS/issues/34018) details how to bypass security to allow usage of QGIS.  To do this:
+**Apple Menu**  > **System Settings**, then click **Privacy & Security** . In the lower half of this window you should see a message similar to:
+"QGIS3.10 can't be opened because Apple cannot check it for malware" click **Open anyways** and then, if another window pops up **open**. QGIS shoult now be on your approved list of software and you now be able to open it as needed! 
 
 **Linux** please refer to [this](https://www.qgis.org/en/site/forusers/alldownloads.html#linux) additional page on installation 
 
