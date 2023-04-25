@@ -202,14 +202,33 @@ Now we can use some relevant layers to look for some areas which like promising 
 https://user-images.githubusercontent.com/62572330/231862471-72b0349f-afe2-44a7-8419-9996d782ce14.mp4
 
 
-
 Here I have drawn some simple yellow boxes around a few of these candidate areas. 
 
 ![Possible Scout Areas](./images/Prospective_Areas.png)
+
 
 There are many different ways to get to these. Which one you choose is pretty personal. An old-timer like me will grab the coordinates, mark them in a physical road atlas, and navigate to them using that, using BLM 1:100 topos as required. But, your tablets provide excellent alternatives!!! For example you can drop pins to these in there, or even select the AIM plot records!!! 
 
 ![Older school coordinate grab](./images/Grab-Coordinate.resized.png)
 
-Anyways, hopefully you have QGIS set up now, and you can start finding scouting populations one species at a time! Whether you record locations in road atlases, tablets, or whatever else, we encouarge you to put them on a spreadsheet. Then you have a record of what looks promising, and we expect you to record the fate of each of these scouting events to the tablet! After a few scouting hitches, you will then be able to switch exclusively to geo-platform for your collection revisits!!
+Anyways, hopefully you have QGIS set up now, and you can start finding scouting populations one species at a time! Whether you record locations in road atlases, tablets, or whatever else, we encourage you to put them on a spreadsheet. Then you have a record of what looks promising, and we expect you to record the fate of each of these scouting events to the tablet! After a few scouting hitches, you will then be able to switch exclusively to geo-platform for your collection revisits!!
 
+## recording digital scouting info to form a hitch plan from
+
+![Scouting tracking spreadsheet](./images/Recording_populations.png)
+
+The above example is a good way to start focusing on species and to keep track of your upcoming hitch (or maybe one far off in the distance depending on when the species flowers). You can more or less group points onto the same day as each other for scouting. 
+
+A tracking spreadsheet like this will also allow you to create a hitch plan very quickly. We want you to make hitch plans so that we have an idea of where you are in the field! While these can be pretty complex for some jobs, our requirements are pretty minimal; and we want them to be useful to *you* and not entirely an obligation. 
+
+![Hitch plan in part](./images/Site_scouting.png)
+
+Also add a simple **screenshot** of the general area(s) you plan on going. 
+
+![Hitch area](./images/Hitch_plan_overview.png)
+
+the above image is more than enough detail, and if you look closely you will see it contains some of the named roads. (you can turn road names on in QGIS via **right clicking** the 'roads' data set, and then **show labels**;  show labels is about the fifth item down on the pop up; but bear in mind, most BLM roads are unnamed, so you may need to zoom out to see if it's working!).
+
+Once you return from your hitch you can add some more tracking info to the sheet. I think the easiest solution is to mostly just link the population back to the scouted point, and copy out the pieces of info which you think you will need to remember to go back to the plot using the tablet!
+
+![Post Hitch Recording](./images/Post_hitch_recording.png)
