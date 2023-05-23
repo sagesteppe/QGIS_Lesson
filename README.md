@@ -94,6 +94,9 @@ If you are unfamiliar with the **root**, it is the base of something! So if we l
     |__ SoS-Planning.qgz # this is now rooted in the geodata directory!!!
 ```
 
+the root of a specific projects directory is:
+![visual root](./images/folder_structure.png)
+
 ## Import data to QGIS
 
 We are now ready to import data to our QGIS project, it looks a little sad without any content doesn't it? First let's add in a basemap so that we are oriented. We will use the **QuickMapServices** Plugin which we just installed. This Plugin is generally located on the right end of your toolbar. It looks like a globe with binoculars. 
