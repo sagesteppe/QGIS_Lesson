@@ -42,7 +42,7 @@ The only other data sets we have which are not present on the tablet are some da
 
 Now we are also going to download some data that contains pre-specified aesthetics for our project. Let's be honest, this should style automatically, but I hardly ever use GUI GIS software, so I just don't know how to do that! Normally it sucks to suck, but I am just going to make you all have to map the aesthetics over yourselves!! So ya!
 
-Download the zip file 'qml_styles' from [here](https://github.com/sagesteppe/QGIS_Lesson/data/qml_styles/qml_styles.zip), and click the little 'download' button. Place this in the same directory as above, and remember to unzip it. 
+Download the zip file 'qml_styles' from [here](https://github.com/sagesteppe/QGIS_Lesson/data/qml_styles.zip), and click the little 'download' button. Place this in the same directory as above, and remember to unzip it. 
 
 ![Download from Github](./images/Download-QML.resized.png)
 
