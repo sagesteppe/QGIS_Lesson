@@ -36,19 +36,17 @@ That's it! We now have an operational GIS on our hands!
 
 ## Gather your project specific data
 
-You all should have a folder of data [here](https://github.com/sagesteppe/QGIS_Lesson/tree/main/data) **UPDATE FOR PRIVACY REASONS EMAIL REED FOR ACCESS TO THESE**.  The drive should have a **zip** file; this is a formatting for compressing data which makes it easier to send. Please download this file. To do this click on YOURCREW-Geodata.zip, and then the download button to the right (scroll down to the bottom of this section for an image of this button highlighted). Once downloaded (or if you have the change to before), please drag this to your project specific folder for Seeds of Success this year. A good place to put this folder, if you do not already have it, is in your **Documents**. From this location you can unzip the folder. On most software systems you can right click the file, and select an option like **decompress**. This folder contains a ton of supplemental project data. Most importantly it contains **Species Distribution Models** (SDMs), we generated species distribution models for all but two of the Great Basin Ecoregion Target Species. We skipped these two because you will have no difficulty finding them! If you would like to learn more about SDM's please visit [this lecture](https://rpubs.com/steppe27/1006352) I recently gave. This folder also contains occurrence data for the species, a subset of the records here are identical to those on the tablet, but we have several times more! We used this large dataset of occurrences to create our Species Distribution Models. 
+You all have been emailed a compressed folder which has your crews project data.
+
+Once downloaded (or if you have the change to before), please drag this to your project specific folder for Seeds of Success this year. A good place to put this folder, if you do not already have it, is in your **Documents**. From this location you can unzip the folder. On most software systems you can right click the file, and select an option like **decompress**. This folder contains a ton of supplemental project data. Most importantly it contains **Species Distribution Models** (SDMs), we generated species distribution models for all but two of the Great Basin Ecoregion Target Species. We skipped these two because you will have no difficulty finding them! If you would like to learn more about SDM's please visit [this lecture](https://rpubs.com/steppe27/1006352) I recently gave. This folder also contains occurrence data for the species, a subset of the records here are identical to those on the tablet, but we have several times more! We used this large dataset of occurrences to create our Species Distribution Models. 
 
 The only other data sets we have which are not present on the tablet are some data on **Drought**, **Invasives annual grasses**. If you are interested in learning more about Ecological Drought check out this section of a big ol' government report [here](https://github.com/sagesteppe/UFO_drought/blob/main/scripts/Section_6.pdf), and some more good info on invasive species from the same report can be found [here](https://github.com/sagesteppe/UFO_noxious_weeds/blob/main/scripts/Section_10.pdf). Cool! So while these data are very similar to what is on the tablet, we have a few more tricks up our sleeves as you will see. 
 
 Now we are also going to download some data that contains pre-specified aesthetics for our project. Let's be honest, this should style automatically, but I hardly ever use GUI GIS software, so I just don't know how to do that! Normally it sucks to suck, but I am just going to make you all have to map the aesthetics over yourselves!! So ya!
 
-Download the zip file 'qml_styles' from [here](https://github.com/sagesteppe/QGIS_Lesson/tree/main/data/qml_styles.zip), and click the little 'download' button. Place this in the same directory as above, and remember to unzip it. 
+## Update a QGIS Project
 
-![Download from Github](./images/Download-QML.resized.png)
-
-## Create a QGIS Project
-
-Many GIS operate on the sense of a **project** a big related set of objects for each thing you are working on. We will create a **Project** for your SoS-Planning. The easy way to do this is to **close** QGIS (if it is open), and reopen it, and click on **'New Project'**, if you already have a project than click **Project >> New**. You have now entered a new Project, now let's save this at the **root** of your Geodata folder. 
+Many GIS operate on the sense of a **project** a big related set of objects for each thing you are working on. We have already created a project for you, and added many data sets which you will use while hitch planning. 
 
 
 ![Save at root](./images/SaveAs-location.resized.png)
