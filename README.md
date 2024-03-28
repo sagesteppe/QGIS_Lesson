@@ -102,8 +102,6 @@ Now if that all went to plan, let's **save** our project! Now we can add in the 
 A very similar process is used to the bulk importing of Species Distribution Models as for the raw occurrence data. 
 
 We will need to select the second tab on the **Load them all** plugin pop-up window. We will the redirect the path to the **SDM**. Now you can load the data again. They should also be **grouped** and have their styles added to them in the same way as the occurrence data. 
- 
-![Plug in Locations](./images/Load-Raster.resized.png)
 
 Note that we dramatically changed how we distribute SDM's for the 2024 year, we nor distribute them as vector data? Can you tell what we clipped these data to? Hydrologic basins.
 
