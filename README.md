@@ -95,50 +95,17 @@ Now, let's apply this styling to every species in our Occurrence group. Click on
 
 But wait... why? Why should each species be the same color! This makes no sense!!! So, the way we came up with this stuff is using a lot of code and approaches from a technique called **'Data Science'**, I'm sure you have heard these term, there is a lot of hype around it. One of the fundamental rules of data science is **don't get overwhelmed by data**. So I seriously, suggest, that you look through each species one at a time! Yep... more on this later. You will also notice that their are several sets of symbology within this layer; the older a record the lighter the color; you will also notice you can deselect old records? Why, because many of those old populations may no longer exist; we want to use current data. 
 
-
 Now if that all went to plan, let's **save** our project! Now we can add in the **SDMs**
 
 ### Add in Species Distribution Models
 
 A very similar process is used to the bulk importing of Species Distribution Models as for the raw occurrence data. 
 
-We will need to select the second tab on the **Load them all** plugin pop-up window, the one that says **"Raster"**. We will the redirect the path to the **SDM**
- directory and switch the filetype to **GeoTIFF .tif, .tiff**. Now you can load the data again. They should also be **grouped** and have their styles added to them in the same way as the occurrence data. 
+We will need to select the second tab on the **Load them all** plugin pop-up window. We will the redirect the path to the **SDM**. Now you can load the data again. They should also be **grouped** and have their styles added to them in the same way as the occurrence data. 
  
 ![Plug in Locations](./images/Load-Raster.resized.png)
 
-### Add in remaining variables
-
-The remaining variables only have at most two layers (for drought), and so they are simple to import. There are a few schools of thought on this but I just go into the folders, like you would when normally navigating a computer and drag and drop the datasets in. The remaining datasets are:
-
-```
-├── Admin
-│   ├── Boundaries
-│   │   ├── Field_Office_Boundaries.shp
-│   └── Surface
-│       ├── BLM_Surface.shp
-│       ├── USFS_Surface.shp
-├── Disturb
-│   ├── Fire
-│   │   ├── Fire.shp
-│   └── Invasive
-│       └── Invasive.tif
-├── Drought
-│   ├── drought-12.tif
-│   ├── drought-6.tif
-├── Roads
-│   ├── roads.shp
-├── SoS-Planning.qgz
-├── Species
-│   ├── Historic_SoS
-│   │   ├── Historic_SoS.shp
-│   ├── Occurrences
-└── STZ
-    ├── STZ.shp
-
-```
-
-Note that you only need to drag the 'shp' file into QGIS, it uses the others, but will figure them out once the '.shp' file is dropped in. All of these layers contain style (qml) files which have identical, or near identical names to them. 
+Note that we dramatically changed how we distribute SDM's for the 2024 year, we nor distribute them as vector data? Can you tell what we clipped these data to? Hydrologic basins.
 
 ## Simple digital scouting example
 
