@@ -28,7 +28,7 @@ Great that is about it! It is a quick install! Once downloaded navigate to the p
 
 ![Plugins](./images/Manage-install_Plugins.resized.png)
 
-Part of why QGIS is so light it that it does not come with many interfaces to the other open-source software which some folks may use. You download these using **Plugins**. We will install two Plugins. Open QGIS, if it is not already, and navigate to the **Plugins** tab on the top bar and **Plugins >> Manage and Install Plugins**. From this pop-up screen use the **Search** bar at top to search for **QuickMapServices**. We will use this Plugin to display base maps. Now let's add one more Plugin, using the **Search** bar search for **Load Them All**. We will use this service to import many files quickly. 
+Part of why QGIS is so light it that it does not come with many interfaces to the other open-source software which some folks may use. You download these using **Plugins**. We will install two Plugins. Open QGIS, if it is not already, and navigate to the **Plugins** tab on the top bar and **Plugins >> Manage and Install Plugins**. From this pop-up screen use the **Search** bar at top to search for **QuickMapServices**. We will use this Plugin to display base maps. Now let's add one more Plugin, using the **Search** bar search for **Load Them All**. We will use this service to import many files quickly. We will grab another Plugin which we can use to order our species by alphabetical names later. **Layer Group and Sort** 
 
 ![Search Plugins](./images/Install-QuickMapServics.resized.png)
 
@@ -65,11 +65,11 @@ If you are unfamiliar with the **root**, it is the base of something! So if we l
 the root of a specific projects directory is:
 ![visual root](./images/folder_structure.png)
 
-Let's launch this project by double clicking on it. 
+Let's launch our 'HitchPlanner' project by double clicking on it. 
 
 ## Import data to QGIS
 
-We are now ready to import data to our QGIS project, it looks a little sad without any content doesn't it? First let's add in a basemap so that we are oriented. We will use the **QuickMapServices** Plugin which we just installed. This Plugin is generally located on the right end of your toolbar. It looks like a globe with binoculars. 
+We are now ready to import data to our QGIS project. First let's add in a basemap so that we are oriented. We will use the **QuickMapServices** Plugin which we just installed. This Plugin is generally located on the right end of your toolbar. It looks like a globe with binoculars. 
 
 ![Plug in Locations](./images/Plugins.resized.png)
 
