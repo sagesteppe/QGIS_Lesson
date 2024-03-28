@@ -77,7 +77,7 @@ Once you have located it, we will use it to import the standard basemap which it
 
 ![Import basemap](./images/Import_OSM.resized.png)
 
-Now we will import our two big sets of data, our **Species Distribution Models**, and the **occurrence** data we used to create them. These are most complex imports, so we will do them before we have a chance to mess up the project and need to revert back!
+Now we will import our two big sets of data, our **Species Distribution Models**, and the **occurrence** data we used to create them. 
 
 https://user-images.githubusercontent.com/62572330/231841827-b28abb00-aff3-42be-8813-43a2a6c8ddb1.mp4
 
