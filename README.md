@@ -50,20 +50,14 @@ Many GIS operate on the sense of a **project** a big related set of objects for 
 
 ```
 .
-└── Geodata
-    ├── Admin
-    │   ├── Boundaries
-    │   └── Surface
-    ├── Disturb
-    │   ├── Fire
-    │   └── Invasive
-    ├── Drought
-    ├── Roads
-    ├── Species
-    │   ├── Historic_SoS
-    │   ├── Occurrences
-    │   └── SDM
-    └── STZ
+├── Admin
+├── Disturb
+├── HitchPlanner.qgz
+├── qml_styles
+├── Roads
+├── Species
+└── STZ
+
 ```
 
 If you are unfamiliar with the **root**, it is the base of something! So if we look in the geodata folder, and think of it as the soil, we have 'Admin', 'Disturb', 'Drought', 'Roads', 'Species' and 'STZ' all rooted in it! So let's save your project in 'Geodata'
