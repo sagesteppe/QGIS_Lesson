@@ -67,21 +67,19 @@ the root of a specific projects directory is:
 
 Let's launch our 'HitchPlanner' project by double clicking on it. 
 
+![Fresh Project](ProjectArea.png)
+
+Note that you will need to manually drag the focal area to where your crew is actually operating. 
+
 ## Import data to QGIS
 
-We are now ready to import data to our QGIS project. First let's add in a basemap so that we are oriented. We will use the **QuickMapServices** Plugin which we just installed. This Plugin is generally located on the right end of your toolbar. It looks like a globe with binoculars. 
-
-![Plug in Locations](./images/Plugins.resized.png)
-
-Once you have located it, we will use it to import the standard basemap which it ships with, **OSM >> OSM Standard**. This imports a freely available base map tile service. Cool!
-
-![Import basemap](./images/Import_OSM.resized.png)
+We are now ready to import data to our QGIS project. 
 
 Now we will import our two big sets of data, our **Species Distribution Models**, and the **occurrence** data we used to create them. 
 
 https://user-images.githubusercontent.com/62572330/231841827-b28abb00-aff3-42be-8813-43a2a6c8ddb1.mp4
 
-We will utilize our other plugin **Load them all**, load them all looks like a folder with a green arrow coming down from it, like the folder is being opened. So click on that! Now make sure that the leftmost option, **Vector**, is toggled. Vector data are what sometimes are called 'shapefiles', shapefiles are a specific type of vector data, but not all vector data are shapefiles!!! If you are unfamiliar with geographic data formats, check out a lecture on the topic [here](). We will now navigate to the to the folder containing your geodata **'Geodata/Species/Occurrences'**, and select the file format **ESRI Shapefile (*.shp)** there should be somewhere from around 30-50 files showing in that location. Now at the very bottom right of this window select 'Load Data'. 
+We will utilize our other plugin **Load them all**, load them all looks like a folder with a green arrow coming down from it, like the folder is being opened. So click on that! Now make sure that the leftmost option, **Vector**, is toggled. Vector data are what sometimes are called 'shapefiles', shapefiles are a specific type of vector data, but not all vector data are shapefiles!!! If you are unfamiliar with geographic data formats, check out a lecture on the topic [here](). We will now navigate to the to the folder containing your geodata **'Geodata/Species/Occurrences'**, and select the file format **ESRI Shapefile (*.shp)**. Now at the very bottom right of this window select 'Load Data'. 
 
 Ok now the occurrence data are imported! We are going to turn these into a **Group**, a set of data which we can manage simultaneously. To create a **Group** right click on the top-most record scroll down to the very last record, and right click again while holding shift. With any luck every record will now be selected! Now on this menu select **'Create Group'**, and let's name this group **Occurrence**. 
 
