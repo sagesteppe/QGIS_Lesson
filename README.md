@@ -60,26 +60,7 @@ Many GIS operate on the sense of a **project** a big related set of objects for 
 
 ```
 
-If you are unfamiliar with the **root**, it is the base of something! So if we look in the geodata folder, and think of it as the soil, we have 'Admin', 'Disturb', 'Drought', 'Roads', 'Species' and 'STZ' all rooted in it! So let's save your project in 'Geodata'
-
-```
-.
-└── Geodata
-    ├── Admin
-    │   ├── Boundaries
-    │   └── Surface
-    ├── Disturb
-    │   ├── Fire
-    │   └── Invasive
-    ├── Drought
-    ├── Roads
-    ├── Species
-    │   ├── Historic_SoS
-    │   ├── Occurrences
-    │   └── SDM
-    └── STZ
-    |__ SoS-Planning.qgz # this is now rooted in the geodata directory!!!
-```
+If you are unfamiliar with the **root**, it is the base of something! So if we look in the geodata folder, and think of it as the soil, we have 'Admin', 'Disturb', 'Drought', 'Roads', 'Species' and 'STZ' all rooted in it! 
 
 the root of a specific projects directory is:
 ![visual root](./images/folder_structure.png)
