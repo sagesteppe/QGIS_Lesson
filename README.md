@@ -46,12 +46,7 @@ Now we are also going to download some data that contains pre-specified aestheti
 
 ## Update a QGIS Project
 
-Many GIS operate on the sense of a **project** a big related set of objects for each thing you are working on. We have already created a project for you, and added many data sets which you will use while hitch planning. 
-
-
-![Save at root](./images/SaveAs-location.resized.png)
-
-
+Many GIS operate on the sense of a **project** a big related set of objects for each thing you are working on. We have already created a project for you 'HitchPlanner.qgz', and added many data sets which you will use while hitch planning. 
 
 ```
 .
