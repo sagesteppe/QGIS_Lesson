@@ -105,6 +105,24 @@ We will need to select the second tab on the **Load them all** plugin pop-up win
 
 Note that we dramatically changed how we distribute SDM's for the 2024 year, we nor distribute them as vector data? Can you tell what we clipped these data to? Hydrologic basins.
 
+If you recall all that a species distribution model tells us is the probability of suitable habitat in each cell. 
+They do not incorporate information regarding the possibilities or probabilies of dispersal from a known site to an unknown site.
+In the above dataset we have done two steps to try and make models more representative of a likelihood of colonized habitat. 
+First we have masked areas with less than 80% probability of suitability, in other words we want their to be a very high likelihood that the habitat is actually suitable. 
+Second we have clipped these suitable areas to hydrologic basins. 
+These areas are expected to have high movement of propagules within them, but depending on the topographic relief, and the relative orientation of them, less movement between them. 
+We have assigned a rank to each patch of suitable habitat within a basin, based on it's 'distance' to a patch which we *know* is populated. 
+
+- '1' indicates that a patch is truly occupied (at least in recent history) in at least part of it's extent.  
+- '2' indicates that a patch neighbors two or more occupied patches, e.g. is a basin just over a ridge - this ridge may be virtually flat and unlikely to restrict flow of seeds, or very steep and likely to restrict flow of seeds.   
+- '3' indicates a patch borders a single occupied patch.
+- '4' indicates that a patch has at least three neighbors which are adjacent to a '1'.
+- '5' indicates that a patch has two or less neighbors which are adjacent to a '1', *or* that three or more '1's exists within 5 kilometers of it. 
+- '6' indicates that a patch has four or more neighbors which are adjacent to a '2', *or* that a '1' exists within 5 kilometers of it.
+- '7' indicates that a patch has three or fewer neighbors which are adjacent to a '2'.
+
+I expect most 1 and 2's wills be occupied, and that just about half the '3' and '4' will be occupied. 5's and up seem like losing gambles to me. 
+
 ## Simple digital scouting example
 
 Some of the layers are kind of redundant and some will require only cursory glances at. For example, the 'Drought' layers are oftentimes pretty similar, and easy to interpret. Anywhere that is not in negative values is great to collect from! And theoretically the bluer, the area the more seeds. But don't worry too much about trying to maximize this. 
