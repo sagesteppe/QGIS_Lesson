@@ -39,6 +39,7 @@ Once downloaded navigate to the program, and if necessary feel free to pin it to
 
 ![Plugins](./images/Manage-install_Plugins.resized.png)
 
+<<<<<<< HEAD
 Part of why QGIS is so light it that it does not come with many interfaces to the other open-source software which some folks may use. 
 You download these using **Plugins** - **Plugins** are like apps. 
 We will install two Plugins.
@@ -48,12 +49,20 @@ We will use this Plugin to display base maps.
 Now let's add one more Plugin, using the **Search** bar search for **Load Them All**. 
 We will use this service to import many files quickly. 
 
+Part of why QGIS is so light it that it does not come with many interfaces to the other open-source software which some folks may use. 
+You download these using **Plugins**. We will install two Plugins. Open QGIS, if it is not already, and navigate to the **Plugins** tab on the top bar and **Plugins >> Manage and Install Plugins**.
+From this pop-up screen use the **Search** bar at top to search for **QuickMapServices**.
+We will use this Plugin to display base maps. Now let's add one more Plugin, using the **Search** bar search for **Load Them All**. 
+We will use this service to import many files quickly. We will grab another Plugin which we can use to order our species by alphabetical names later. **Layer Group and Sort** 
+
+
 ![Search Plugins](./images/Install-QuickMapServics.resized.png)
 
 That's it! We now have an operational GIS on our hands!
 
 ## Gather your project specific data
 
+<<<<<<< HEAD
 You all should have been sent a folder of data tailored for your region.
 The drive should have a **zip** file; this is a formatting for compressing data which makes it easier to send. 
 Please download this file. 
@@ -76,6 +85,42 @@ The only other data sets we have which are not present on the tablet are some da
 
 Now we are also going to download some data that contains pre-specified aesthetics for our project. I have been able to load and pre-style all but two components of these projects. 
 
+You all have been emailed a compressed folder which has your crews project data.
+
+Once downloaded (or if you have the change to before), please drag this to your project specific folder for Seeds of Success this year. A good place to put this folder, if you do not already have it, is in your **Documents**. From this location you can unzip the folder. On most software systems you can right click the file, and select an option like **decompress**. This folder contains a ton of supplemental project data. Most importantly it contains **Species Distribution Models** (SDMs), we generated species distribution models for all but two of the Great Basin Ecoregion Target Species. We skipped these two because you will have no difficulty finding them! If you would like to learn more about SDM's please visit [this lecture](https://rpubs.com/steppe27/1006352) I recently gave. This folder also contains occurrence data for the species, a subset of the records here are identical to those on the tablet, but we have several times more! We used this large dataset of occurrences to create our Species Distribution Models. 
+
+The only other data sets we have which are not present on the tablet are some data on **Drought**, **Invasives annual grasses**. If you are interested in learning more about Ecological Drought check out this section of a big ol' government report [here](https://github.com/sagesteppe/UFO_drought/blob/main/scripts/Section_6.pdf), and some more good info on invasive species from the same report can be found [here](https://github.com/sagesteppe/UFO_noxious_weeds/blob/main/scripts/Section_10.pdf). Cool! So while these data are very similar to what is on the tablet, we have a few more tricks up our sleeves as you will see. 
+
+Now we are also going to download some data that contains pre-specified aesthetics for our project. Let's be honest, this should style automatically, but I hardly ever use GUI GIS software, so I just don't know how to do that! Normally it sucks to suck, but I am just going to make you all have to map the aesthetics over yourselves!! So ya!
+
+## Update a QGIS Project
+
+Many GIS operate on the sense of a **project** a big related set of objects for each thing you are working on. We have already created a project for you 'HitchPlanner.qgz', and added many data sets which you will use while hitch planning. 
+
+```
+.
+├── Admin
+├── Disturb
+├── HitchPlanner.qgz
+├── qml_styles
+├── Roads
+├── Species
+└── STZ
+
+```
+
+If you are unfamiliar with the **root**, it is the base of something! So if we look in the geodata folder, and think of it as the soil, we have 'Admin', 'Disturb', 'Drought', 'Roads', 'Species' and 'STZ' all rooted in it! 
+
+the root of a specific projects directory is:
+![visual root](./images/folder_structure.png)
+
+
+Let's launch our 'HitchPlanner' project by double clicking on it. 
+
+![Fresh Project](ProjectArea.png)
+
+Note that you will need to manually drag the focal area to where your crew is actually operating. 
+
 ## Import data to QGIS
 
 We are now ready to import data to our QGIS project, it looks a little sad without any content doesn't it? First let's add in a base-map so that we are oriented. We will use the **QuickMapServices** Plugin which we just installed. This Plugin is generally located on the right end of your toolbar. It looks like a globe with binoculars. 
@@ -87,16 +132,19 @@ Once you have located it, we will use it to import the standard base-map which i
 ![Import basemap](./images/Import_OSM.resized.png)
 
 Now we will import our two big sets of data, our **Species Distribution Models**, and the **occurrence** data we used to create them. These are most complex imports, so we will do them before we have a chance to mess up the project and need to revert back!
+We are now ready to import data to our QGIS project. 
+
+Now we will import our two big sets of data, our **Species Distribution Models**, and the **occurrence** data we used to create them. 
 
 https://user-images.githubusercontent.com/62572330/231841827-b28abb00-aff3-42be-8813-43a2a6c8ddb1.mp4
 
-We will utilize our other plugin **Load them all**, load them all looks like a folder with a green arrow coming down from it, like the folder is being opened. So click on that! Now make sure that the leftmost option, **Vector**, is toggled. Vector data are what sometimes are called 'shapefiles', shapefiles are a specific type of vector data, but not all vector data are shapefiles!!! If you are unfamiliar with geographic data formats, check out a lecture on the topic [here](). We will now navigate to the to the folder containing your geodata **'Geodata/Species/Occurrences'**, and select the file format **ESRI Shapefile (*.shp)** there should be somewhere from around 30-50 files showing in that location. Now at the very bottom right of this window select 'Load Data'. 
+We will utilize our other plugin **Load them all**, load them all looks like a folder with a green arrow coming down from it, like the folder is being opened. So click on that! Now make sure that the leftmost option, **Vector**, is toggled. Vector data are what sometimes are called 'shapefiles', shapefiles are a specific type of vector data, but not all vector data are shapefiles!!! If you are unfamiliar with geographic data formats, check out a lecture on the topic [here](). We will now navigate to the to the folder containing your geodata **'Geodata/Species/Occurrences'**, and select the file format **ESRI Shapefile (*.shp)**. Now at the very bottom right of this window select 'Load Data'. 
 
-Ok now the occurrence data are imported! We are going to turn these into a **Group**, a set of data which we can manage simultaneously. To create a **Group** right click on the top-most record scroll down to the very last record, and right click again while holding shift. With any luck every record will now be selected! Now on this menu select **'Create Group'**, and let's name this group **Occurrence**. 
+Ok now the occurrence data are imported! We are going to turn these into a **Group**, a set of data which we can manage simultaneously. To create a **Group** right click on the top-most record scroll down to the very last record, and right click again while holding shift. With any luck every record will now be selected! Now on drag these records into the **'Occurrences'** group which is nested within the **Species** group.  
 
 https://user-images.githubusercontent.com/62572330/231843778-76bd0eaa-066b-448b-96c0-b64ed32543d3.mp4
 
-We will style these data now quickly. Because well, they are uninformative, and data which are uninformative are not worth much. We will load some pre-loading styles I came up with using [Colorbrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3), hopefully they look okay. Right click on the top-most record, it is probably *Achnatherum lemmonii*, and select **'Properties'** and then **Style >> Load Style**, now navigate to the **qml_styles** directory, and select the **Occurrences.qml** file. Now **Apply** and **OK** this selection. 
+We will style these data now quickly. Because well, they are uninformative, and data which are uninformative are not worth much. We will load some pre-loading styles I came up with using [Colorbrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3), hopefully they look okay. Right click on the top-most species occurrence record and select **'Properties'** and then **Style >> Load Style**, now navigate to the **qml_styles** directory, and select the **Occurrences.qml** file. Now **Apply** and **OK** this selection. 
 
 https://user-images.githubusercontent.com/62572330/231844207-5b512126-f423-47ec-b8c3-782cdec1daa0.mp4
 
@@ -106,50 +154,33 @@ Now, let's apply this styling to every species in our Occurrence group. Click on
 
 But wait... why? Why should each species be the same color! This makes no sense!!! So, the way we came up with this stuff is using a lot of code and approaches from a technique called **'Data Science'**, I'm sure you have heard these term, there is a lot of hype around it. One of the fundamental rules of data science is **don't get overwhelmed by data**. So I seriously, suggest, that you look through each species one at a time! Yep... more on this later. You will also notice that their are several sets of symbology within this layer; the older a record the lighter the color; you will also notice you can deselect old records? Why, because many of those old populations may no longer exist; we want to use current data. 
 
-
 Now if that all went to plan, let's **save** our project! Now we can add in the **SDMs**
 
 ### Add in Species Distribution Models
 
 A very similar process is used to the bulk importing of Species Distribution Models as for the raw occurrence data. 
 
-We will need to select the second tab on the **Load them all** plugin pop-up window, the one that says **"Raster"**. We will the redirect the path to the **SDM**
- directory and switch the filetype to **GeoTIFF .tif, .tiff**. Now you can load the data again. They should also be **grouped** and have their styles added to them in the same way as the occurrence data. 
- 
-![Plug in Locations](./images/Load-Raster.resized.png)
+We will need to select the second tab on the **Load them all** plugin pop-up window. We will the redirect the path to the **SDM**. Now you can load the data again. They should also be **grouped** and have their styles added to them in the same way as the occurrence data. 
 
-### Add in remaining variables
+Note that we dramatically changed how we distribute SDM's for the 2024 year, we nor distribute them as vector data? Can you tell what we clipped these data to? Hydrologic basins.
 
-The remaining variables only have at most two layers (for drought), and so they are simple to import. There are a few schools of thought on this but I just go into the folders, like you would when normally navigating a computer and drag and drop the datasets in. The remaining datasets are:
+If you recall all that a species distribution model tells us is the probability of suitable habitat in each cell. 
+They do not incorporate information regarding the possibilities or probabilies of dispersal from a known site to an unknown site.
+In the above dataset we have done two steps to try and make models more representative of a likelihood of colonized habitat. 
+First we have masked areas with less than 80% probability of suitability, in other words we want their to be a very high likelihood that the habitat is actually suitable. 
+Second we have clipped these suitable areas to hydrologic basins. 
+These areas are expected to have high movement of propagules within them, but depending on the topographic relief, and the relative orientation of them, less movement between them. 
+We have assigned a rank to each patch of suitable habitat within a basin, based on it's 'distance' to a patch which we *know* is populated. 
 
-```
-├── Admin
-│   ├── Boundaries
-│   │   ├── Field_Office_Boundaries.shp
-│   └── Surface
-│       ├── BLM_Surface.shp
-│       ├── USFS_Surface.shp
-├── Disturb
-│   ├── Fire
-│   │   ├── Fire.shp
-│   └── Invasive
-│       └── Invasive.tif
-├── Drought
-│   ├── drought-12.tif
-│   ├── drought-6.tif
-├── Roads
-│   ├── roads.shp
-├── SoS-Planning.qgz
-├── Species
-│   ├── Historic_SoS
-│   │   ├── Historic_SoS.shp
-│   ├── Occurrences
-└── STZ
-    ├── STZ.shp
+- '1' indicates that a patch is truly occupied (at least in recent history) in at least part of it's extent.  
+- '2' indicates that a patch neighbors two or more occupied patches, e.g. is a basin just over a ridge - this ridge may be virtually flat and unlikely to restrict flow of seeds, or very steep and likely to restrict flow of seeds.   
+- '3' indicates a patch borders a single occupied patch.
+- '4' indicates that a patch has at least three neighbors which are adjacent to a '1'.
+- '5' indicates that a patch has two or less neighbors which are adjacent to a '1', *or* that three or more '1's exists within 5 kilometers of it. 
+- '6' indicates that a patch has four or more neighbors which are adjacent to a '2', *or* that a '1' exists within 5 kilometers of it.
+- '7' indicates that a patch has three or fewer neighbors which are adjacent to a '2'.
 
-```
-
-Note that you only need to drag the 'shp' file into QGIS, it uses the others, but will figure them out once the '.shp' file is dropped in. All of these layers contain style (qml) files which have identical, or near identical names to them. 
+I expect most 1 and 2's wills be occupied, and that just about half the '3' and '4' will be occupied. 5's and up seem like losing gambles to me. 
 
 ## Simple digital scouting example
 
