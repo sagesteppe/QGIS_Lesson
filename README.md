@@ -36,10 +36,10 @@ There is a common problem on Macintosh that the security ticket from QGIS is not
 Great that is about it! 
 It is a quick install!
 Once downloaded navigate to the program, and if necessary feel free to pin it to your start bar or something so you don't forget about it!
+You can now delete the 'installer' from your downloads - the program is installed elsewhere one your system and the installer is no longer required. 
 
 ![Plugins](./images/Manage-install_Plugins.resized.png)
 
-<<<<<<< HEAD
 Part of why QGIS is so light it that it does not come with many interfaces to the other open-source software which some folks may use. 
 You download these using **Plugins** - **Plugins** are like apps. 
 We will install two Plugins.
@@ -55,22 +55,20 @@ From this pop-up screen use the **Search** bar at top to search for **QuickMapSe
 We will use this Plugin to display base maps. Now let's add one more Plugin, using the **Search** bar search for **Load Them All**. 
 We will use this service to import many files quickly. We will grab another Plugin which we can use to order our species by alphabetical names later. **Layer Group and Sort** 
 
-
 ![Search Plugins](./images/Install-QuickMapServics.resized.png)
 
 That's it! We now have an operational GIS on our hands!
 
 ## Gather your project specific data
 
-<<<<<<< HEAD
 You all should have been sent a folder of data tailored for your region.
-The drive should have a **zip** file; this is a formatting for compressing data which makes it easier to send. 
+The data will be in a **zip** file; this is a formatting for compressing data which makes it easier to send. 
 Please download this file. 
-To do this click on YOURCREW-Geodata.zip, and then the download button to the right (scroll down to the bottom of this section for an image of this button highlighted). 
 Once downloaded (or if you have the change to before), please drag this to your project specific folder for Seeds of Success this year. 
 
 A good place to put this folder, if you do not already have it, is in your **Documents**. A suitable path, and name for this folder should be *"C:/UserName/Documents/2024SOS_Planning"*. 
-Notice that we are not keeping these data on OneDsrive, we want them copied onto your physical drive. 
+Notice that we are not keeping these data on OneDrive, we want them copied onto your physical drive.
+This will allow you to review these data without internet connection. 
 
 Drag and drop this folder from your downloads into this location, and unzip the folder. 
 On most software systems you can right click the file, and select an option like **decompress**. 
@@ -85,15 +83,9 @@ The only other data sets we have which are not present on the tablet are some da
 
 Now we are also going to download some data that contains pre-specified aesthetics for our project. I have been able to load and pre-style all but two components of these projects. 
 
-You all have been emailed a compressed folder which has your crews project data.
+We will need to manually drag in both the raw species occurrence data, as well as the SDM's which have been clipped to hydrologic basins. 
 
-Once downloaded (or if you have the change to before), please drag this to your project specific folder for Seeds of Success this year. A good place to put this folder, if you do not already have it, is in your **Documents**. From this location you can unzip the folder. On most software systems you can right click the file, and select an option like **decompress**. This folder contains a ton of supplemental project data. Most importantly it contains **Species Distribution Models** (SDMs), we generated species distribution models for all but two of the Great Basin Ecoregion Target Species. We skipped these two because you will have no difficulty finding them! If you would like to learn more about SDM's please visit [this lecture](https://rpubs.com/steppe27/1006352) I recently gave. This folder also contains occurrence data for the species, a subset of the records here are identical to those on the tablet, but we have several times more! We used this large dataset of occurrences to create our Species Distribution Models. 
-
-The only other data sets we have which are not present on the tablet are some data on **Drought**, **Invasives annual grasses**. If you are interested in learning more about Ecological Drought check out this section of a big ol' government report [here](https://github.com/sagesteppe/UFO_drought/blob/main/scripts/Section_6.pdf), and some more good info on invasive species from the same report can be found [here](https://github.com/sagesteppe/UFO_noxious_weeds/blob/main/scripts/Section_10.pdf). Cool! So while these data are very similar to what is on the tablet, we have a few more tricks up our sleeves as you will see. 
-
-Now we are also going to download some data that contains pre-specified aesthetics for our project. Let's be honest, this should style automatically, but I hardly ever use GUI GIS software, so I just don't know how to do that! Normally it sucks to suck, but I am just going to make you all have to map the aesthetics over yourselves!! So ya!
-
-## Update a QGIS Project
+## Update a QGIS Project 'HitchPlanner'
 
 Many GIS operate on the sense of a **project** a big related set of objects for each thing you are working on. We have already created a project for you 'HitchPlanner.qgz', and added many data sets which you will use while hitch planning. 
 
@@ -114,12 +106,10 @@ If you are unfamiliar with the **root**, it is the base of something! So if we l
 the root of a specific projects directory is:
 ![visual root](./images/folder_structure.png)
 
-
 Let's launch our 'HitchPlanner' project by double clicking on it. 
 
-![Fresh Project](ProjectArea.png)
-
-Note that you will need to manually drag the focal area to where your crew is actually operating. 
+Note that you will need to manually drag the focal area to where your crew is actually operating.
+It is defaulting to the field office which I set up first to 'style' the elements. 
 
 ## Import data to QGIS
 
@@ -181,6 +171,10 @@ We have assigned a rank to each patch of suitable habitat within a basin, based 
 - '7' indicates that a patch has three or fewer neighbors which are adjacent to a '2'.
 
 I expect most 1 and 2's wills be occupied, and that just about half the '3' and '4' will be occupied. 5's and up seem like losing gambles to me. 
+
+If you have few of these polygons for species in your area, let me know and I will send you the 'raw' SDM output. 
+Some areas suffer from a lack of recent field work, and this approach is not optimal for them. 
+
 
 ## Simple digital scouting example
 
