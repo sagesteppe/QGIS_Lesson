@@ -136,6 +136,8 @@ https://user-images.githubusercontent.com/62572330/231843778-76bd0eaa-066b-448b-
 
 We will style these data now quickly. Because well, they are uninformative, and data which are uninformative are not worth much. We will load some pre-loading styles I came up with using [Colorbrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3), hopefully they look okay. Right click on the top-most species occurrence record and select **'Properties'** and then **Style >> Load Style**, now navigate to the **qml_styles** directory, and select the **Occurrences.qml** file. Now **Apply** and **OK** this selection. 
 
+For the 2024 data, 'Occurrences' is still the name for the occurrence point data, and 'SDM-Pred' is the name for the species distribution data which you have been sent. 
+
 https://user-images.githubusercontent.com/62572330/231844207-5b512126-f423-47ec-b8c3-782cdec1daa0.mp4
 
 You might not even be able to see what we did there... Let's turn of all of the records in our **Occurrence** group really quick. Right click on the group, and select **Uncheck and all it's children**, now just check the little cell next to the record you added the stylings to, maybe *Achnatherum lemmonii*, OK see what we did? If not you might need to **Right Click >> Zoom to layer**; now you should be focused on these records. Keep in mind for you field offices there could only be 1 record! 
@@ -175,6 +177,19 @@ I expect most 1 and 2's wills be occupied, and that just about half the '3' and 
 If you have few of these polygons for species in your area, let me know and I will send you the 'raw' SDM output. 
 Some areas suffer from a lack of recent field work, and this approach is not optimal for them. 
 
+Now remember that QGIS draws layer in ascending order based on the box in the left hand of the screen.
+Please move the Occurrence type points above the clipped SDM polygons. 
+This will allow you to see both the points and polygons at once. 
+
+If you want to be able to see through the polygons you can change the opacity. 
+Click on one of the species in your stack, under the 'Symbology' tab (left side) in the window, click the pink bar in 'Symbol'.
+Drag the Opacity bar down to 70% or so. Click 'OK', and then 'OK' to exit the window and the selected layer should be updated. 
+Now with this layer selected 'Styles' -> 'Copy Style' -> 'All Style Categories', and you can then paste it to the top most record in this group (described above), and all layers should take on this style. 
+
+If you want to make the occurrence points larger we can do that too. 
+Select the layer for a single species, once it is highlighted in blue, right click and select 'Properties', now you should be in a window with 'Symbology' toggled to the left. 
+Click the arrow next to 'Symbol' and 'Configure Symbol'. Now into the Size field type in '15' or so, hit 'OK' and 'OK' again. 
+If this size is large enough, copy it to the other layers within this group as described above. 
 
 ## Simple digital scouting example
 

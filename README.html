@@ -583,6 +583,9 @@ record and select <strong>‘Properties’</strong> and then <strong>Style
 <strong>qml_styles</strong> directory, and select the
 <strong>Occurrences.qml</strong> file. Now <strong>Apply</strong> and
 <strong>OK</strong> this selection.</p>
+<p>For the 2024 data, ‘Occurrences’ is still the name for the occurrence
+point data, and ‘SDM-Pred’ is the name for the species distribution data
+which you have been sent.</p>
 <p><a href="https://user-images.githubusercontent.com/62572330/231844207-5b512126-f423-47ec-b8c3-782cdec1daa0.mp4" class="uri">https://user-images.githubusercontent.com/62572330/231844207-5b512126-f423-47ec-b8c3-782cdec1daa0.mp4</a></p>
 <p>You might not even be able to see what we did there… Let’s turn of
 all of the records in our <strong>Occurrence</strong> group really
@@ -664,6 +667,25 @@ me.</p>
 know and I will send you the ‘raw’ SDM output. Some areas suffer from a
 lack of recent field work, and this approach is not optimal for
 them.</p>
+<p>Now remember that QGIS draws layer in ascending order based on the
+box in the left hand of the screen. Please move the Occurrence type
+points above the clipped SDM polygons. This will allow you to see both
+the points and polygons at once.</p>
+<p>If you want to be able to see through the polygons you can change the
+opacity. Click on one of the species in your stack, under the
+‘Symbology’ tab (left side) in the window, click the pink bar in
+‘Symbol’. Drag the Opacity bar down to 70% or so. Click ‘OK’, and then
+‘OK’ to exit the window and the selected layer should be updated. Now
+with this layer selected ‘Styles’ -&gt; ‘Copy Style’ -&gt; ‘All Style
+Categories’, and you can then paste it to the top most record in this
+group (described above), and all layers should take on this style.</p>
+<p>If you want to make the occurrence points larger we can do that too.
+Select the layer for a single species, once it is highlighted in blue,
+right click and select ‘Properties’, now you should be in a window with
+‘Symbology’ toggled to the left. Click the arrow next to ‘Symbol’ and
+‘Configure Symbol’. Now into the Size field type in ‘15’ or so, hit ‘OK’
+and ‘OK’ again. If this size is large enough, copy it to the other
+layers within this group as described above.</p>
 </div>
 </div>
 <div id="simple-digital-scouting-example" class="section level2">
